@@ -1,4 +1,4 @@
-# Anabella-Guimarey
+# Anabella Guimarey
 This is my personal website.
 <br>
 I used Bulma CSS framework.
