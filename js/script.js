@@ -13,9 +13,3 @@ function showTooltip() {
         tooltipCopy.style.display = "none";
     },3000);
 }
-
-function removeFocus() {
-    ('input').blur();
-}
-
-removeFocus;
