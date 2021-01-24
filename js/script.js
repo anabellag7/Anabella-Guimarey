@@ -14,7 +14,8 @@ function showTooltip() {
     },3000);
 }
 
-$(function () {
-    $('input').blur();
-})
+function removeFocus() {
+    ('input').blur();
+}
 
+removeFocus;
