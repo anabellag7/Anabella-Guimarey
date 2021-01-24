@@ -14,3 +14,7 @@ function showTooltip() {
     },3000);
 }
 
+$(function () {
+    $('input').blur();
+})
+
