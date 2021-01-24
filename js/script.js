@@ -4,6 +4,7 @@ function copyText() {
     copyEmail.setSelectionRange(0,99999);
     document.execCommand("copy");
     showTooltip();
+    removeFocus();
 }
 
 function showTooltip() {
@@ -12,4 +13,8 @@ function showTooltip() {
     setTimeout(()=>{
         tooltipCopy.style.display = "none";
     },3000);
+}
+
+function removeFocus() {
+    document.getElementById('email').blur();
 }
