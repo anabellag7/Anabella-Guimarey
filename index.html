@@ -18,20 +18,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="icon" href="img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
   <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.5;
+      color: black;
+    }
+    
     section {
       margin-top: 3rem;
     }
 
     .container {
-      max-width: 60rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    img {
+      border-radius: 50%;
+      max-width: 28%;
+      height: auto;
+    }
+
+    hr.line {
+      border: 1px solid darkgrey;
+    }
+
+    .links {
+      text-align: right;
+    }
+
+    .subtitle {
+      color: gray;
+
     }
 
     .email {
       position: absolute;
       left:-9999px;
+    }
+
+    .button {
+      background-color: #e7e7e7; /* Green */
+      border: none;
+      border-radius: 4px;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
     }
 
     .div-email {
@@ -43,50 +83,40 @@
       display: none;
       color: #16C60C;
       margin-left: 10px;
-      margin-top: 8px;
+      margin-top: 9px;
     }
   </style>
 </head>
 
 <body>
-  <section class="section">
+  <section>
     <div class="container">
-      <div class="columns">
-        <div class="column is-2">
-          <figure class="image is-128x128">
-            <img class="is-rounded" alt="Anabella Guimarey" src="img/profile_pic.jpg">
-          </figure>
-        </div>
-        <div class="column">
-          <h1 class="title">
-            Anabella Guimarey
-          </h1>
-          <h4 class="subtitle is-4">
-            Technical Project Manager
-          </h4>
-          <p class="is-size-5">Hello! My name is Anabella Guimarey, and I'm a Technical Project Manager. Officially, my job is to manage projects from start to finish. But really? I get the job done by standing up for the project. My superpowers are: building strong relationships, focusing on the business benefits and taking a look at the big picture.
-          </p>
-          <br>
-          <p class="is-size-5">My background is in geology, but I've also worked as a front-end developer, marketer, salesperson, and product manager. Wearing many hats and having a passion for technology has helped me become a successful technical project manager.
-          </p>
-          <br>
-          <p class="is-size-5">I'm currently at <a
-            href="https://asapp.com/" target="_blank">ASAPP</a>, leading software development projects to create amazing AI applications in enterprise and, pursuing a master's degree in Information Technology at <a href="https://www.palermo.edu/" target="_blank">Universidad de Palermo</a>.</p>
-          <br>
-          <p class="is-size-5">🌐 Check out my <a href="https://www.linkedin.com/in/anabellaguimarey/" target="_blank">LinkedIn</a>, my <a href="https://medium.com/@anabellag7" target="_blank">blog,</a> some of my <a href="https://www.researchgate.net/profile/Anabella_Guimarey" target="_blank">research</a>, and the <a href="https://github.com/anabellag7" target="_blank">code</a> I built to create this website.
-          </p>
-          <br>
-          <p class="is-size-5">📋 Download my <a href="docs/Guimarey_Anabella_Resume.pdf" target="_blank">resume</a>.</p>
-          <br>
-          <p class="is-size-5">👇 Click on the button below to copy my email.</p>
-          <br>
-          <input type="text" class="email" value="anabellag7@gmail.com" id="email" readonly>
-          <div class="div-email">
-            <button class="button is-light is-size-5" onclick="copyText()">anabellag7@gmail.com</button>
-            <span id="tooltip" class="copied-tooltip is-size-5">Copied!</span>
-          </div>
-        </div>
+      <img class="round" alt="Anabella Guimarey" src="img/profile_pic.jpg">
+      <hr class="line">
+      <h1>
+        Anabella Guimarey
+      </h1>
+      <h3 class="subtitle">
+        Technical Project Manager
+      </h3>
+      <p>Hello! My name is Anabella Guimarey, and I'm a Technical Project Manager.
+      </p>
+      <p>I'm currently at <a
+        href="https://asapp.com/" target="_blank">ASAPP</a>, leading software development projects to create amazing AI applications in enterprise and, pursuing a master's degree in Information Technology at <a href="https://www.palermo.edu/" target="_blank">Universidad de Palermo</a>.</p>
+      <p>📋 Download my <a href="docs/Guimarey_Anabella_Resume.pdf" target="_blank">resume</a>.</p>
+      <p>👇 Click on the button below to copy my email.</p>
+      <input type="text" class="email" value="anabellag7@gmail.com" id="email" readonly>
+      <div class="div-email">
+        <button class="button" onclick="copyText()">anabellag7@gmail.com</button>
+        <span id="tooltip" class="copied-tooltip">Copied!</span>
       </div>
+      <br>
+      <hr class="line">
+      <p><a href="https://www.linkedin.com/in/anabellaguimarey/" target="_blank">LinkedIn</a>
+        <a href="https://medium.com/@anabellag7" target="_blank">Blog</a>
+        <a href="https://github.com/anabellag7" target="_blank">Github</a>
+        <a href="https://twitter.com/anabellag7_" target="_blank">Twitter</a>
+      </p>
     </div>
   </section>
 </body>
