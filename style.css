@@ -15,7 +15,7 @@
 
     img {
       border-radius: 50%;
-      max-width: 28%;
+      max-width: 25%;
       height: auto;
     }
 
@@ -61,4 +61,8 @@
       color: #16C60C;
       margin-left: 10px;
       margin-top: 9px;
+    }
+
+    .date {
+        color: grey;
     }
